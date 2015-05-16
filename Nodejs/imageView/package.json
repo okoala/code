@@ -1,0 +1,14 @@
+{
+  "name": "imageView",
+  "version": "1.0.0",
+  "description": "image view",
+  "main": "generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KoalaHuang",
+  "license": "MIT",
+  "dependencies": {
+    "easyimage": "^2.0.3"
+  }
+}
