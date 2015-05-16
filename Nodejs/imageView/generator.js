@@ -10,7 +10,7 @@ recursive('./images', function(err, files) {
     files.forEach(function(file, index) {
         easyimg.thumbnail({
             src: file,
-            dst: file.replace('images', 'thumbs'),
+            dst: file.replace(/^(images)/i, 'thumbs'),
             width: 85,
             height: 85,
             x: 0,
@@ -28,7 +28,7 @@ recursive('./images', function(err, files) {
         var content = '';
 
         files.forEach(function(file, index) {
-            content += '<image imageURL="' + file + '" thumbURL="' + file.replace('images', 'thumbs') + '" linkURL="' + file + '" linkTarget="_blank"></image>';
+            content += '<image imageURL="' + file + '" thumbURL="' + file.replace(/^(images)/i, 'thumbs') + '" linkURL="' + file + '" linkTarget="_blank"></image>';
         });
 
         return doctype + start + content + end;
