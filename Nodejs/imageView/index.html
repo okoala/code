@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Juicebox-Pro Full Browser Demo</title>
+        <meta charset="utf-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="minimal-ui"/>
+        <meta name="description" content="Showing autoPlay, music, watermarking, back button and direct linking support." />
+        <style type="text/css">
+            body {
+                margin: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--START JUICEBOX-PRO EMBED.-->
+        <script src="./juicebox.js"></script>
+        <script>
+            new juicebox({
+                containerid: 'juicebox-container',
+                themeUrl: './theme.css',
+                showAutoPlayButton:"true",
+                showAudioButton:"true",
+                showInfoButton:"true",
+                showNavButtons:"true",
+                loopAudio: "true",
+                playAudioOnLoad:"false",
+                showBackButton:"true",
+                backbuttonURL:"/demos/",
+                galleryTitlePosition:"NONE",
+                backButtonPosition: "OVERLAY",
+                showThumbPagingText: "true",
+                maxThumbColumns: "8",
+                enableDirectLinks: "true",
+                useFullscreenExpand: true,
+                captionPosition: "OVERLAY_IMAGE",
+                backButtonUseIcon: true
+            });
+
+        </script>
+        <div id="juicebox-container"></div>
+        <!--END JUICEBOX-PRO EMBED.-->
+    </body>
+</html>
