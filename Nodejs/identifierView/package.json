@@ -1,0 +1,18 @@
+{
+  "name": "identifier-view",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "each-async": "^1.1.1",
+    "esprima": "^2.2.0",
+    "esprima-walk": "^0.1.0",
+    "lodash": "^3.9.3",
+    "swig": "^1.4.2"
+  }
+}
